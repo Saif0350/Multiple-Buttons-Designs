@@ -10,6 +10,8 @@ import Button7 from "@/components/Button7";
 import Button8 from "@/components/Button8";
 import Button9 from "@/components/Button9";
 import Button1 from "@/components/Buttons/Button1";
+import TimeLineMain from "@/components/TimelineSection/TimeLineMain";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -29,6 +31,11 @@ export default function Home() {
             <Button10 />
             <Button11 />
             <Button12 />
+            <div className="px-6 py-2 bg-green-600">
+              <Link href={"/timeline"}>
+                <button>TimeLine</button>
+              </Link>
+            </div>
           </div>
         </div>
       </main>
